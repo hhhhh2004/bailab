@@ -1,0 +1,83 @@
+/*Default*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*cho toan bo trang mac dinh*/
+}
+body{
+    font-family: sans-serif;
+}
+form{
+    display: flex;/*tu chuyen tu can dc*/
+    flex-direction: column;/*theo cot tu tren xuong duoi*/
+    justify-content: center;/*toan bo noi dung can giua*/
+    max-width: 400px;/*do rong toi da*/
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);/*do bong nhe*/
+    padding: 50px;
+}
+.title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 10px
+}
+form div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+form div{
+    position: relative;
+    margin-bottom: 15px;
+}
+input:focus{
+    border: 2px solid #f2796e;
+}
+/*Cac style cho icon*/
+form div i{
+    position: absolute;/*vi tri tuyet doi co dinh*/
+    padding: 15px;
+}
+.failure-icon,
+.error{
+    color: red;
+}
+.success-icon{
+    color: green ;
+}
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+.success-icon,
+.success-icon,
+.failure-icon{
+    right: 0;
+    opacity: 0;
+}
+button:hover{
+    opacity: 0.8;
+    }      /*hieu ung nhap nhay*/
+    button{
+    width: 100%;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #f2796e;
+    height: 45px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0,0, 0.1);/*box shawo vs box radius phai giong nhau*/
+    border: 2px solid #f2796e;
+    transition: all 0.1s ease;/*do tre chi chuot len*/
+    }
+    
+
+
+

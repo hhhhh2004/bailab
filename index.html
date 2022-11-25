@@ -1,44 +1,60 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>JavaScript Form Validation</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Form Validation Exaple</title>
+    <link rel="stylesheet" href="./styel.css">
 </head>
 <body>
-    <div class="container">
-        <form id="signup" class="form">
-            <h1>Sign Up</h1>
-            <div class="form-field">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" autocomplete="off">
-                <small></small>
+   <div class="container">
+    <form action="" id="form">
+        <div class="title">Get Started</div>
+        <!--User Name input -->
+        <div>
+            <label for="username">User Name</label>
+            <i class="fas fa-user"></i>
+            <input
+            type="username" 
+            name="username" 
+            id="username"
+            placeholder="James bond">
+            <i class="fas fa-check-circle success-icon"></i>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <div class="error"></div>
+        </div>
+        <!--Email input -->
+        <div>
+            <label for="email">Email</label>
+            <i class="fas fa-envelope"></i>
+            <input
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="bond@gmail.com">
+            <i class="fas fa-check-circle success-icon"></i>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <div class="error"></div>
+        </div>
+        <!--Password input-->
+        <div>
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+            <input
+            type="password" 
+            name="password" 
+            id="password"
+            placeholder="Password here">
+            <i class="fas fa-check-circle success-icon"></i>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <div class="error"></div>
             </div>
+        <button type="submit">Submit</button>
 
-            <div class="form-field">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" autocomplete="off">
-                <small></small>
-            </div>
-
-            <div class="form-field">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" autocomplete="off">
-                <small></small>
-            </div>
-
-
-            <div class="form-field">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
-                <small></small>
-            </div>
-
-            <div class="form-field">
-                <input type="submit" value="Sign Up">
-            </div>
-        </form>
-    </div>
-
-    <script src="js/app.js"></script>
+    </form>
+   </div>
 </body>
+<script src="main.js"></script>
 </html>
